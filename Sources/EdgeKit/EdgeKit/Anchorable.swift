@@ -19,10 +19,10 @@ public protocol Anchorable {
     var width: NSLayoutDimension { get }
     var height: NSLayoutDimension { get }
 
-    func prepareForAutoLayout()
+    func arrangeForAutoLayout()
 }
 
-extension Anchorable where Self: UIView {
+extension UIView: Anchorable {
     
     public var topEdge: NSLayoutYAxisAnchor {
         return topAnchor
@@ -56,7 +56,7 @@ extension Anchorable where Self: UIView {
         return heightAnchor
     }
     
-    public func prepareForAutoLayout() {
+    public func arrangeForAutoLayout() {
         if translatesAutoresizingMaskIntoConstraints {
             translatesAutoresizingMaskIntoConstraints = false
         }
