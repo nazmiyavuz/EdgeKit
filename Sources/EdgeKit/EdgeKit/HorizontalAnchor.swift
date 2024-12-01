@@ -17,10 +17,10 @@ public enum HorizontalAnchor {
     
     public var anchor: NSLayoutXAxisAnchor {
         switch self {
-        case .left(of: let view): return view.leftAnchor
-        case .leading(of: let view): return view.leadingAnchor
+        case .left(of: let view):     return view.leftAnchor
+        case .leading(of: let view):  return view.leadingAnchor
         case .trailing(of: let view): return view.trailingAnchor
-        case .centerX(of: let view): return view.centerXAnchor
+        case .centerX(of: let view):  return view.centerXAnchor
         }
     }
     
