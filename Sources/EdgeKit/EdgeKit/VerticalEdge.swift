@@ -8,6 +8,7 @@
 
 import UIKit
 
+@MainActor
 public enum VerticalEdge {
     case topEdge(of: UIView)
     case bottomEdge(of: UIView)

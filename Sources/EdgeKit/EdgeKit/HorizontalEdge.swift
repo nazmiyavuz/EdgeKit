@@ -8,6 +8,7 @@
 
 import UIKit
 
+@MainActor
 public enum HorizontalEdge {
     
     case leftEdge(of: UIView)

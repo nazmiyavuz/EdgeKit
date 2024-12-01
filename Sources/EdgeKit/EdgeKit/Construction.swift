@@ -10,6 +10,7 @@ import UIKit
 
 public typealias AnchorRelation = NSLayoutConstraint.Relation
 
+@MainActor
 public protocol Construction {
     func left(
         toItem view: HorizontalEdge,
