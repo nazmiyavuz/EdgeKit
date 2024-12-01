@@ -14,13 +14,8 @@ public extension NSLayoutConstraint {
         return self
     }
     
-    func activate() -> Self {
-        isActive = true
-        return self
-    }
-    
-    func deactivate() -> Self {
-        isActive = false
+    func activate(_ value: Bool) -> Self {
+        isActive = value
         return self
     }
     
