@@ -11,7 +11,7 @@ extension UIView: Construction {
     
     @discardableResult
     public func left(
-        toItem view: HorizontalEdge,
+        to view: HorizontalEdge,
         padding: CGFloat = 0,
         relatedBy: AnchorRelation = .equal,
         priority: UILayoutPriority = .required,

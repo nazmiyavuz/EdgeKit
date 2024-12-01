@@ -28,7 +28,7 @@ public protocol Construction {
     /// - Returns: The relationship between two user interface objects that
     ///   must be satisfied by the constraint-based layout system.
     func left(
-        toItem view: HorizontalEdge,
+        to view: HorizontalEdge,
         padding: CGFloat,
         relatedBy: AnchorRelation,
         priority: UILayoutPriority,
