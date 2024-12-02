@@ -88,5 +88,27 @@ extension UIView {
         }
     }
     
+    func getDimensionalConstraint(
+        _ width: CGFloat,
+        with layout: LayoutGuide,
+        relatedBy: AnchorRelation
+    ) -> NSLayoutConstraint? {
+        let dimension: NSLayoutDimension? = getEdgeAnchor(with: layout)
+        
+        switch relatedBy {
+        case .equal:
+            return dimension?.constraint(equalToConstant: layout.constant(width))
+            
+        case .greaterThanOrEqual:
+            return dimension?.constraint(greaterThanOrEqualToConstant: layout.constant(width))
+            
+        case .lessThanOrEqual:
+            return dimension?.constraint(lessThanOrEqualToConstant: layout.constant(width))
+            
+        @unknown default:
+            return dimension?.constraint(equalToConstant: layout.constant(width))
+        }
+    }
+    
 }
 
