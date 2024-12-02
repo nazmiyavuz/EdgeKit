@@ -9,6 +9,14 @@ import UIKit
 
 extension UIView: Construction {
     
+    private func getXAnchor(of view: HorizontalEdge) -> NSLayoutXAxisAnchor? {
+        if let anchor = view.anchor {
+            return anchor
+        } else {
+            return view.setParentAnchor(of: self.superview, edge: .leftEdge(of: nil))
+        }
+    }
+    
     @discardableResult
     public func left(
         to view: HorizontalEdge,
