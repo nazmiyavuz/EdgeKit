@@ -55,16 +55,16 @@ extension UIView: Construction {
         var constraint: NSLayoutConstraint {
             switch relatedBy {
             case .equal:
-                return rightAnchor.constraint(equalTo: anchor, constant: padding)
+                return rightAnchor.constraint(equalTo: anchor, constant: -padding)
                 
             case .greaterThanOrEqual:
-                return rightAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
+                return rightAnchor.constraint(greaterThanOrEqualTo: anchor, constant: -padding)
                 
             case .lessThanOrEqual:
-                return rightAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
+                return rightAnchor.constraint(lessThanOrEqualTo: anchor, constant: -padding)
                 
             @unknown default:
-                return rightAnchor.constraint(equalTo: anchor, constant: padding)
+                return rightAnchor.constraint(equalTo: anchor, constant: -padding)
             }
         }
         
@@ -94,6 +94,35 @@ extension UIView: Construction {
                 
             @unknown default:
                 return topAnchor.constraint(equalTo: anchor, constant: padding)
+            }
+        }
+        
+        return constraint.setPriority(to: priority).activate(isActive)
+    }
+    
+    @discardableResult
+    public func bottom(
+        to view: VerticalEdge,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> NSLayoutConstraint? {
+        guard let anchor = getYAnchor(of: view, parentViewEdge: .bottomEdge(of: nil)) else { return nil }
+        
+        var constraint: NSLayoutConstraint {
+            switch relatedBy {
+            case .equal:
+                return bottomAnchor.constraint(equalTo: anchor, constant: -padding)
+                
+            case .greaterThanOrEqual:
+                return bottomAnchor.constraint(greaterThanOrEqualTo: anchor, constant: -padding)
+                
+            case .lessThanOrEqual:
+                return bottomAnchor.constraint(lessThanOrEqualTo: anchor, constant: -padding)
+                
+            @unknown default:
+                return bottomAnchor.constraint(equalTo: anchor, constant: -padding)
             }
         }
         
