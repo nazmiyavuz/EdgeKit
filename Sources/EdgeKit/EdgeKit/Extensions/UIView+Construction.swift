@@ -84,6 +84,19 @@ extension UIView: Construction {
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
+    @discardableResult
+    public func centerY(
+        to view: VerticalEdge,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> NSLayoutConstraint? {
+        guard let anchor = getYAnchor(of: view, parentViewEdge: .centerY(of: nil)) else { return nil }
+        let constraint = getYConstraint(of: view, padding: padding, with: .centerY,
+                                        relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
+    }
     
 }
   
