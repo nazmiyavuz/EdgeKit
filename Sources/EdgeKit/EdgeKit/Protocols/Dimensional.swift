@@ -22,7 +22,7 @@ public protocol Dimensional {
     ///   the constraints of the system as a whole.
     ///   - isActive: A boolean property to activate or deactivate the constraint
     /// - Returns: ``UIKit/NSLayoutConstraint``
-    func width(
+    func setWidth(
         _ width: CGFloat,
         relatedBy: AnchorRelation,
         priority: UILayoutPriority,
@@ -39,7 +39,7 @@ public protocol Dimensional {
     ///   allowing the system to make appropriate tradeoffs when satisfying
     ///   the constraints of the system as a whole.
     ///   - isActive: A boolean property to activate or deactivate the constraint
-    func height(
+    func setHeight(
         _ height: CGFloat,
         relatedBy: AnchorRelation,
         priority: UILayoutPriority,

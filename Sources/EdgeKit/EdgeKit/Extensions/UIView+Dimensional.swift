@@ -11,7 +11,7 @@ import UIKit
 extension UIView: Dimensional {
     
     @discardableResult
-    public func width(
+    public func setWidth(
         _ width: CGFloat,
         relatedBy: AnchorRelation = .equal,
         priority: UILayoutPriority = .required,
@@ -23,7 +23,7 @@ extension UIView: Dimensional {
     }
     
     @discardableResult
-    public func height(
+    public func setHeight(
         _ height: CGFloat,
         relatedBy: AnchorRelation = .equal,
         priority: UILayoutPriority = .required,
