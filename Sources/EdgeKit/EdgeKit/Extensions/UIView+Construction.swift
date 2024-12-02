@@ -18,6 +18,7 @@ extension UIView: Construction {
         priority: UILayoutPriority = .required,
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
+        
         arrangeForAutoLayout()
         
         guard let anchor = getXAnchor(of: view, parentViewEdge: .leftEdge(of: nil)) else { return nil }
@@ -50,6 +51,8 @@ extension UIView: Construction {
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
         
+        arrangeForAutoLayout()
+        
         guard let anchor = getXAnchor(of: view, parentViewEdge: .rightEdge(of: nil)) else { return nil }
         
         var constraint: NSLayoutConstraint {
@@ -79,6 +82,9 @@ extension UIView: Construction {
         priority: UILayoutPriority = .required,
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
+        
+        arrangeForAutoLayout()
+        
         guard let anchor = getYAnchor(of: view, parentViewEdge: .topEdge(of: nil)) else { return nil }
         
         var constraint: NSLayoutConstraint {
@@ -108,6 +114,9 @@ extension UIView: Construction {
         priority: UILayoutPriority = .required,
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
+        
+        arrangeForAutoLayout()
+        
         guard let anchor = getYAnchor(of: view, parentViewEdge: .bottomEdge(of: nil)) else { return nil }
         
         var constraint: NSLayoutConstraint {
