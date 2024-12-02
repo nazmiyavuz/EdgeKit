@@ -54,11 +54,6 @@ public extension UIView {
         widthAnchor.constraint(equalToConstant: width).isActive = isActive
     }
     
-    func setHeight(_ height: CGFloat, isActive: Bool = true) {
-        translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: height).isActive = isActive
-    }
-    
     func fillSuperview() {
         translatesAutoresizingMaskIntoConstraints = false
         guard let view = superview else { return }

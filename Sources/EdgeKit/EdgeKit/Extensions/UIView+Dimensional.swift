@@ -22,4 +22,16 @@ extension UIView: Dimensional {
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
+    @discardableResult
+    public func height(
+        _ height: CGFloat,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> NSLayoutConstraint? {
+        arrangeForAutoLayout()
+        let constraint = getDimensionalConstraint(height, with: .height, relatedBy: relatedBy)
+        return constraint?.setPriority(to: priority).activate(isActive)
+    }
+    
 }
