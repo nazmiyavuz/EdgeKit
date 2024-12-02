@@ -44,10 +44,10 @@ extension UIView: Construction {
     @discardableResult
     public func right(
         to view: HorizontalEdge,
-        padding: CGFloat,
-        relatedBy: AnchorRelation,
-        priority: UILayoutPriority,
-        isActive: Bool
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
     ) -> NSLayoutConstraint? {
         
         guard let anchor = getXAnchor(of: view, parentViewEdge: .rightEdge(of: nil)) else { return nil }
@@ -74,10 +74,10 @@ extension UIView: Construction {
     @discardableResult
     public func top(
         to view: VerticalEdge,
-        padding: CGFloat,
-        relatedBy: AnchorRelation,
-        priority: UILayoutPriority,
-        isActive: Bool
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
     ) -> NSLayoutConstraint? {
         guard let anchor = getYAnchor(of: view, parentViewEdge: .topEdge(of: nil)) else { return nil }
         
