@@ -12,7 +12,7 @@ extension UIView: Omnidirectional {
     
     @discardableResult
     public func centerInParent(
-        inSafeArea: Bool = true,
+        inSafeArea: Bool = false,
         padding: CGFloat = 0,
         relatedBy: AnchorRelation = .equal,
         priority: UILayoutPriority = .required,

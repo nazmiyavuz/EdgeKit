@@ -12,7 +12,7 @@ public protocol Vertical {
     /// The top alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
@@ -33,7 +33,7 @@ public protocol Vertical {
     /// The bottom alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
@@ -54,7 +54,7 @@ public protocol Vertical {
     /// The center alignment in the vertical axis of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the

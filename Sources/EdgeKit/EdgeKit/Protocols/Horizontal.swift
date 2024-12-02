@@ -14,7 +14,7 @@ public protocol Horizontal {
     /// The left alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
@@ -35,7 +35,7 @@ public protocol Horizontal {
     /// The right alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
@@ -83,7 +83,7 @@ public protocol Horizontal {
     ///   the layout guide reflects only the portion of the view that is covered by other content.
     ///   For example, if a view is entirely within the safe area of its superview,
     ///   the layout guide edges are equal to the edges of the view.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
@@ -104,7 +104,7 @@ public protocol Horizontal {
     /// The center alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
-    ///   - padding: The constant offset for the constraint.
+    ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
