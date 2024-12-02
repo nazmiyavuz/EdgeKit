@@ -11,7 +11,7 @@ import UIKit
 @MainActor
 public protocol Dimensional {
     
-    /// The right alignment of the related view according to the another one
+    /// A function to set the width of the related UIView
     /// - Parameters:
     ///   - width: A constant representing the size of the attribute associated with this dimension anchor.
     ///   - relatedBy: The relation between the first attribute
@@ -21,8 +21,7 @@ public protocol Dimensional {
     ///   allowing the system to make appropriate tradeoffs when satisfying
     ///   the constraints of the system as a whole.
     ///   - isActive: A boolean property to activate or deactivate the constraint
-    /// - Returns: The relationship between two user interface objects that
-    ///   must be satisfied by the constraint-based layout system.
+    /// - Returns: ``UIKit/NSLayoutConstraint``
     func width(
         _ width: CGFloat,
         relatedBy: AnchorRelation,
