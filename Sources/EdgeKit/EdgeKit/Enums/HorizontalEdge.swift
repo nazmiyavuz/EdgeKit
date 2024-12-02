@@ -5,7 +5,6 @@
 //  Created by Nazmi Yavuz on 1.12.2024.
 //
 
-
 import UIKit
 
 @MainActor
