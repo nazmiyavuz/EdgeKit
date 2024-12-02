@@ -15,12 +15,12 @@ public protocol Dimensional {
     /// - Parameters:
     ///   - width: A constant representing the size of the attribute associated with this dimension anchor.
     ///   - relatedBy: The relation between the first attribute
-    ///   and the modified second attribute in a constraint.
+    ///   and the modified second attribute in a constraint. The default value is equal.
     ///   - priority: The layout priority is used to indicate to the
     ///   constraint-based layout system which constraints are more important,
     ///   allowing the system to make appropriate tradeoffs when satisfying
-    ///   the constraints of the system as a whole.
-    ///   - isActive: A boolean property to activate or deactivate the constraint
+    ///   the constraints of the system as a whole.The default value is required.
+    ///   - isActive: A boolean property to activate or deactivate the constraint. The default value is `true`.
     /// - Returns: ``UIKit/NSLayoutConstraint``
     func setWidth(
         _ width: CGFloat,
@@ -33,12 +33,12 @@ public protocol Dimensional {
     /// - Parameters:
     ///   - height: A constant representing the size of the attribute associated with this dimension anchor.
     ///   - relatedBy: The relation between the first attribute
-    ///   and the modified second attribute in a constraint.
+    ///   and the modified second attribute in a constraint. The default value is equal.
     ///   - priority: The layout priority is used to indicate to the
     ///   constraint-based layout system which constraints are more important,
     ///   allowing the system to make appropriate tradeoffs when satisfying
-    ///   the constraints of the system as a whole.
-    ///   - isActive: A boolean property to activate or deactivate the constraint
+    ///   the constraints of the system as a whole.The default value is required.
+    ///   - isActive: A boolean property to activate or deactivate the constraint. The default value is `true`.
     func setHeight(
         _ height: CGFloat,
         relatedBy: AnchorRelation,
@@ -50,13 +50,13 @@ public protocol Dimensional {
     /// - Parameters:
     ///   - width: A weight value representing the size of the attribute associated with this dimension anchor.
     ///   - height: A height value representing the size of the attribute associated with this dimension anchor.
-    ///   - relatedBy: The relation between the first attribute
+    ///   - relatedBy: The relation between the first attribute. The default value is equal.
     ///   and the modified second attribute in a constraint.
     ///   - priority: The layout priority is used to indicate to the
     ///   constraint-based layout system which constraints are more important,
     ///   allowing the system to make appropriate tradeoffs when satisfying
-    ///   the constraints of the system as a whole.
-    ///   - isActive: A boolean property to activate or deactivate the constraint
+    ///   the constraints of the system as a whole.The default value is required.
+    ///   - isActive: A boolean property to activate or deactivate the constraint. The default value is `true`.
     func setSize(
         width: CGFloat,
         height: CGFloat,
