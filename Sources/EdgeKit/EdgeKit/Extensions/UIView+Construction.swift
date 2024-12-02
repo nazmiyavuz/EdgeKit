@@ -98,12 +98,29 @@ extension UIView: Construction {
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
+    // MARK: - All
+    @discardableResult
+    public func centerInParent(
+        inSafeArea: Bool = true,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> [NSLayoutConstraint?] {
+        let centerXConstraint = centerX(to: .parentView(inSafeArea: inSafeArea), padding: padding,
+                                        relatedBy: relatedBy, priority: priority, isActive: isActive)
+        
+        let centerYConstraint = centerY(to: .parentView(inSafeArea: inSafeArea), padding: padding,
+                                        relatedBy: relatedBy, priority: priority, isActive: isActive)
+        return [centerXConstraint, centerYConstraint]
+    }
+    
 }
   
 // MARK: - Private Functions
 private extension UIView {
     
-    func getEdgeAnchor<V, T>(of view: V, with layout: LayoutGuide) -> T? {
+    private func getEdgeAnchor<V, T>(of view: V, with layout: LayoutGuide) -> T? {
         switch layout {
         case .top:      return topAnchor as? T
         case .left:     return leftAnchor as? T
