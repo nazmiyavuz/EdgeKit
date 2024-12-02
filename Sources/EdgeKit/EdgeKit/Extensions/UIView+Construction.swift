@@ -115,6 +115,21 @@ extension UIView: Construction {
         return [centerXConstraint, centerYConstraint]
     }
     
+    @discardableResult
+    public func center(
+        to view: UIView,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> [NSLayoutConstraint?] {
+        let centerXConstraint = centerX(to: .centerX(of: view), padding: padding,
+                                        relatedBy: relatedBy, priority: priority, isActive: isActive)
+        let centerYConstraint = centerY(to: .centerY(of: view), padding: padding,
+                                        relatedBy: relatedBy, priority: priority, isActive: isActive)
+        return [centerXConstraint, centerYConstraint]
+    }
+    
 }
   
 // MARK: - Private Functions

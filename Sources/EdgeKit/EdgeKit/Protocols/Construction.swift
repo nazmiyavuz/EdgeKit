@@ -167,4 +167,26 @@ public protocol Construction {
         priority: UILayoutPriority,
         isActive: Bool
     ) -> [NSLayoutConstraint?]
+    
+    // MARK: - All Axis
+    /// The center alignment of the related view according to the another one
+    /// - Parameters:
+    ///   - view: The first attribute in a constraint.
+    ///   - padding: The constant offset for the constraint.
+    ///   - relatedBy: The relation between the first attribute
+    ///   and the modified second attribute in a constraint.
+    ///   - priority: The layout priority is used to indicate to the
+    ///   constraint-based layout system which constraints are more important,
+    ///   allowing the system to make appropriate tradeoffs when satisfying
+    ///   the constraints of the system as a whole.
+    ///   - isActive: A boolean property to activate or deactivate the constraint
+    /// - Returns: The relationship between two user interface objects that
+    ///   must be satisfied by the constraint-based layout system.
+    func center(
+        to view: UIView,
+        padding: CGFloat,
+        relatedBy: AnchorRelation,
+        priority: UILayoutPriority,
+        isActive: Bool
+    ) -> [NSLayoutConstraint?]
 }
