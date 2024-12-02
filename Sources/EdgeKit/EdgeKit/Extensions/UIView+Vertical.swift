@@ -21,7 +21,7 @@ extension UIView: Vertical {
     ) -> NSLayoutConstraint? {
         arrangeForAutoLayout()
         guard let anchor = getYAnchor(of: view, parentViewEdge: .topEdge(of: nil)) else { return nil }
-        let constraint = getYConstraint(of: view, padding: padding, with: .top, relatedBy: relatedBy, anchor: anchor)
+        let constraint = getYConstraint(padding: padding, with: .top, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
@@ -35,7 +35,7 @@ extension UIView: Vertical {
     ) -> NSLayoutConstraint? {
         arrangeForAutoLayout()
         guard let anchor = getYAnchor(of: view, parentViewEdge: .bottomEdge(of: nil)) else { return nil }
-        let constraint = getYConstraint(of: view, padding: padding, with: .bottom, relatedBy: relatedBy, anchor: anchor)
+        let constraint = getYConstraint(padding: padding, with: .bottom, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
@@ -48,8 +48,7 @@ extension UIView: Vertical {
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
         guard let anchor = getYAnchor(of: view, parentViewEdge: .centerY(of: nil)) else { return nil }
-        let constraint = getYConstraint(of: view, padding: padding, with: .centerY,
-                                        relatedBy: relatedBy, anchor: anchor)
+        let constraint = getYConstraint(padding: padding, with: .centerY, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     

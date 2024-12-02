@@ -21,7 +21,7 @@ extension UIView: Horizontal {
         
         arrangeForAutoLayout()
         guard let anchor = getXAnchor(of: view, parentViewEdge: .leftEdge(of: nil)) else { return nil }
-        let constraint = getXConstraint(of: view, padding: padding, with: .left, relatedBy: relatedBy, anchor: anchor)
+        let constraint = getXConstraint(padding: padding, with: .left, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
@@ -35,7 +35,7 @@ extension UIView: Horizontal {
     ) -> NSLayoutConstraint? {
         arrangeForAutoLayout()
         guard let anchor = getXAnchor(of: view, parentViewEdge: .rightEdge(of: nil)) else { return nil }
-        let constraint = getXConstraint(of: view, padding: padding, with: .right, relatedBy: relatedBy, anchor: anchor)
+        let constraint = getXConstraint(padding: padding, with: .right, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
@@ -50,8 +50,7 @@ extension UIView: Horizontal {
         arrangeForAutoLayout()
         
         guard let anchor = getXAnchor(of: view, parentViewEdge: .centerX(of: nil)) else { return nil }
-        let constraint = getXConstraint(of: view, padding: padding, with: .centerX,
-                                        relatedBy: relatedBy, anchor: anchor)
+        let constraint = getXConstraint(padding: padding, with: .centerX, relatedBy: relatedBy, anchor: anchor)
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     

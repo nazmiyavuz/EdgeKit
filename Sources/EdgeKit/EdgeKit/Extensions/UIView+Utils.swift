@@ -32,8 +32,7 @@ extension UIView {
         }
     }
     
-    func getXConstraint<V>(
-        of view: V,
+    func getXConstraint(
         padding: CGFloat,
         with layout: LayoutGuide,
         relatedBy: AnchorRelation,
@@ -64,8 +63,7 @@ extension UIView {
         }
     }
     
-    func getYConstraint<V>(
-        of view: V,
+    func getYConstraint(
         padding: CGFloat,
         with layout: LayoutGuide,
         relatedBy: AnchorRelation,
