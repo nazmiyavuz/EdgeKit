@@ -20,26 +20,9 @@ extension UIView: Construction {
     ) -> NSLayoutConstraint? {
         
         arrangeForAutoLayout()
-        
         guard let anchor = getXAnchor(of: view, parentViewEdge: .leftEdge(of: nil)) else { return nil }
-        
-        var constraint: NSLayoutConstraint {
-            switch relatedBy {
-            case .equal:
-                return leftAnchor.constraint(equalTo: anchor, constant: padding)
-                
-            case .greaterThanOrEqual:
-                return leftAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
-                
-            case .lessThanOrEqual:
-                return leftAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
-                
-            @unknown default:
-                return leftAnchor.constraint(equalTo: anchor, constant: padding)
-            }
-        }
-        
-        return constraint.setPriority(to: priority).activate(isActive)
+        let constraint = getXConstraint(of: view, padding: padding, with: .left, relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
     }
     
     @discardableResult
@@ -50,25 +33,10 @@ extension UIView: Construction {
         priority: UILayoutPriority = .required,
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
-        
         arrangeForAutoLayout()
-        
         guard let anchor = getXAnchor(of: view, parentViewEdge: .rightEdge(of: nil)) else { return nil }
-        
-        var constraint: NSLayoutConstraint {
-            switch relatedBy {
-            case .equal:
-                return rightAnchor.constraint(equalTo: anchor, constant: -padding)
-                
-            case .greaterThanOrEqual:
-                return rightAnchor.constraint(greaterThanOrEqualTo: anchor, constant: -padding)
-                
-            case .lessThanOrEqual:
-                return rightAnchor.constraint(lessThanOrEqualTo: anchor, constant: -padding)
-                
-            @unknown default:
-                return rightAnchor.constraint(equalTo: anchor, constant: -padding)
-            }
+        let constraint = getXConstraint(of: view, padding: padding, with: .right, relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
         }
         
         return constraint.setPriority(to: priority).activate(isActive)
@@ -83,28 +51,10 @@ extension UIView: Construction {
         priority: UILayoutPriority = .required,
         isActive: Bool = true
     ) -> NSLayoutConstraint? {
-        
         arrangeForAutoLayout()
-        
         guard let anchor = getYAnchor(of: view, parentViewEdge: .topEdge(of: nil)) else { return nil }
-        
-        var constraint: NSLayoutConstraint {
-            switch relatedBy {
-            case .equal:
-                return topAnchor.constraint(equalTo: anchor, constant: padding)
-                
-            case .greaterThanOrEqual:
-                return topAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
-                
-            case .lessThanOrEqual:
-                return topAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
-                
-            @unknown default:
-                return topAnchor.constraint(equalTo: anchor, constant: padding)
-            }
-        }
-        
-        return constraint.setPriority(to: priority).activate(isActive)
+        let constraint = getYConstraint(of: view, padding: padding, with: .top, relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
     }
     
     @discardableResult
