@@ -34,4 +34,17 @@ extension UIView: Dimensional {
         return constraint?.setPriority(to: priority).activate(isActive)
     }
     
+    @discardableResult
+    public func setSize(
+        width: CGFloat,
+        height: CGFloat,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> [NSLayoutConstraint?] {
+        let widthConstraint = setWidth(width, relatedBy: relatedBy, priority: priority, isActive: isActive)
+        let heightConstraint = setHeight(height, relatedBy: relatedBy, priority: priority, isActive: isActive)
+        return [widthConstraint, heightConstraint]
+    }
+    
 }
