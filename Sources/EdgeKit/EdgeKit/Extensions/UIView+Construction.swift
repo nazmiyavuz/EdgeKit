@@ -9,7 +9,7 @@ import UIKit
 
 extension UIView: Construction {
     
-    // MARK: - X Axis
+    // MARK: - Horizontal Axis
     @discardableResult
     public func left(
         to view: HorizontalEdge,
@@ -74,6 +74,7 @@ extension UIView: Construction {
         return constraint.setPriority(to: priority).activate(isActive)
     }
     
+    // MARK: - Vertical Axis
     @discardableResult
     public func top(
         to view: VerticalEdge,

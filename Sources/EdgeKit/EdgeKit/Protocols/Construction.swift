@@ -13,7 +13,7 @@ public typealias AnchorRelation = NSLayoutConstraint.Relation
 
 @MainActor
 public protocol Construction {
-    
+    // MARK: - Horizontal Axis
     /// The left alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
@@ -56,6 +56,7 @@ public protocol Construction {
         isActive: Bool
     ) -> NSLayoutConstraint?
     
+    // MARK: - Vertical Axis
     /// The top alignment of the related view according to the another one
     /// - Parameters:
     ///   - view: The first attribute in a constraint.
