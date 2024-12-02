@@ -71,6 +71,35 @@ extension UIView: Construction {
         return constraint.setPriority(to: priority).activate(isActive)
     }
     
+    @discardableResult
+    public func top(
+        to view: VerticalEdge,
+        padding: CGFloat,
+        relatedBy: AnchorRelation,
+        priority: UILayoutPriority,
+        isActive: Bool
+    ) -> NSLayoutConstraint? {
+        guard let anchor = getYAnchor(of: view, parentViewEdge: .topEdge(of: nil)) else { return nil }
+        
+        var constraint: NSLayoutConstraint {
+            switch relatedBy {
+            case .equal:
+                return topAnchor.constraint(equalTo: anchor, constant: padding)
+                
+            case .greaterThanOrEqual:
+                return topAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
+                
+            case .lessThanOrEqual:
+                return topAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
+                
+            @unknown default:
+                return topAnchor.constraint(equalTo: anchor, constant: padding)
+            }
+        }
+        
+        return constraint.setPriority(to: priority).activate(isActive)
+    }
+    
     // MARK: - Private Functions
     private func getXAnchor(of view: HorizontalEdge, parentViewEdge: HorizontalEdge) -> NSLayoutXAxisAnchor? {
         if let anchor = view.anchor {
