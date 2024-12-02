@@ -48,68 +48,6 @@ public extension UIView {
         }
     }
     
-    func center(inView view: UIView, yConstant: CGFloat? = 0,
-                width: CGFloat? = nil,
-                height: CGFloat? = nil, isActive: Bool = true) {
-        translatesAutoresizingMaskIntoConstraints = false
-        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = isActive
-        centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: yConstant!).isActive = isActive
-        
-        if let width = width {
-            widthAnchor.constraint(equalToConstant: width).isActive = isActive
-        }
-        
-        if let height = height {
-            heightAnchor.constraint(equalToConstant: height).isActive = isActive
-        }
-    }
-    
-    func centerX(inView view: UIView, topAnchor: NSLayoutYAxisAnchor? = nil,
-                 bottomAnchor: NSLayoutYAxisAnchor? = nil,
-                 paddingTop: CGFloat? = 0,
-                 paddingBottom: CGFloat? = 0,
-                 width: CGFloat? = nil,
-                 height: CGFloat? = nil,
-                 isActive: Bool = true) {
-        translatesAutoresizingMaskIntoConstraints = false
-        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = isActive
-        
-        if let topAnchor = topAnchor {
-            self.topAnchor.constraint(equalTo: topAnchor, constant: paddingTop!).isActive = isActive
-        }
-        
-        if let bottomAnchor = bottomAnchor {
-            self.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -paddingBottom!).isActive = isActive
-        }
-        
-        if let width = width {
-            widthAnchor.constraint(equalToConstant: width).isActive = isActive
-        }
-        
-        if let height = height {
-            heightAnchor.constraint(equalToConstant: height).isActive = isActive
-        }
-    }
-    
-    func centerY(inView view: UIView, leftAnchor: NSLayoutXAxisAnchor? = nil,
-                 rightAnchor: NSLayoutXAxisAnchor? = nil, paddingLeft: CGFloat = 0,
-                 paddingRight: CGFloat = 0, constant: CGFloat = 0,
-                 isActive: Bool = true) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant).isActive = isActive
-        
-        if let left = leftAnchor {
-            anchor(left: left, paddingLeft: paddingLeft)
-        }
-        
-        if let right = rightAnchor {
-            anchor(right: right, paddingRight: paddingRight)
-        }
-        
-        
-    }
-    
     func setDimensions(height: CGFloat, width: CGFloat, isActive: Bool = true) {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = isActive
@@ -119,11 +57,6 @@ public extension UIView {
     func setHeight(_ height: CGFloat, isActive: Bool = true) {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = isActive
-    }
-    
-    func setWidth(_ width: CGFloat, isActive: Bool = true) {
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalToConstant: width).isActive = isActive
     }
     
     func fillSuperview() {
