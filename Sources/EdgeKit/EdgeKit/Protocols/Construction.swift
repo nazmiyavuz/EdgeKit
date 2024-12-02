@@ -33,5 +33,5 @@ public protocol Construction {
         relatedBy: AnchorRelation,
         priority: UILayoutPriority,
         isActive: Bool
-    ) -> NSLayoutConstraint
+    ) -> NSLayoutConstraint?
 }
