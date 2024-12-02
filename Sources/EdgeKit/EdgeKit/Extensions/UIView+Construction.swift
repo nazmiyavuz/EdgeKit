@@ -79,6 +79,14 @@ extension UIView: Construction {
             return view.setParentAnchor(of: self.superview, edge: parentViewEdge)
         }
     }
+    
+    private func getYAnchor(of view: VerticalEdge, parentViewEdge: VerticalEdge) -> NSLayoutYAxisAnchor? {
+        if let anchor = view.anchor {
+            return anchor
+        } else {
+            return view.setParentAnchor(of: self.superview, edge: parentViewEdge)
+        }
+    }
 }
     
     
