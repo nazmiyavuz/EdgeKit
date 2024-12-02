@@ -11,7 +11,7 @@ import UIKit
 // MARK: - Private Functions
 extension UIView {
     
-    private func getEdgeAnchor<V, T>(of view: V, with layout: LayoutGuide) -> T? {
+    private func getEdgeAnchor<T>(with layout: LayoutGuide) -> T? {
         switch layout {
         case .top:      return topAnchor as? T
         case .left:     return leftAnchor as? T
@@ -39,20 +39,20 @@ extension UIView {
         relatedBy: AnchorRelation,
         anchor: NSLayoutXAxisAnchor
     ) -> NSLayoutConstraint? {
-        let edge: NSLayoutXAxisAnchor? = getEdgeAnchor(of: view, with: layout)
+        let edge: NSLayoutXAxisAnchor? = getEdgeAnchor(with: layout)
         
         switch relatedBy {
         case .equal:
-            return edge?.constraint(equalTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(equalTo: anchor, constant: layout.constant(padding))
             
         case .greaterThanOrEqual:
-            return edge?.constraint(greaterThanOrEqualTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(greaterThanOrEqualTo: anchor, constant: layout.constant(padding))
             
         case .lessThanOrEqual:
-            return edge?.constraint(lessThanOrEqualTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(lessThanOrEqualTo: anchor, constant: layout.constant(padding))
             
         @unknown default:
-            return edge?.constraint(equalTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(equalTo: anchor, constant: layout.constant(padding))
         }
     }
     
@@ -71,20 +71,20 @@ extension UIView {
         relatedBy: AnchorRelation,
         anchor: NSLayoutYAxisAnchor
     ) -> NSLayoutConstraint? {
-        let edge: NSLayoutYAxisAnchor? = getEdgeAnchor(of: view, with: layout)
+        let edge: NSLayoutYAxisAnchor? = getEdgeAnchor(with: layout)
         
         switch relatedBy {
         case .equal:
-            return edge?.constraint(equalTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(equalTo: anchor, constant: layout.constant(padding))
             
         case .greaterThanOrEqual:
-            return edge?.constraint(greaterThanOrEqualTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(greaterThanOrEqualTo: anchor, constant: layout.constant(padding))
             
         case .lessThanOrEqual:
-            return edge?.constraint(lessThanOrEqualTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(lessThanOrEqualTo: anchor, constant: layout.constant(padding))
             
         @unknown default:
-            return edge?.constraint(equalTo: anchor, constant: layout.getPadding(padding))
+            return edge?.constraint(equalTo: anchor, constant: layout.constant(padding))
         }
     }
     

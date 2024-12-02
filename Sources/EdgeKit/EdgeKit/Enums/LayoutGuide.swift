@@ -18,7 +18,7 @@ enum LayoutGuide {
     case centerX
     case centerY
     
-    func getPadding(_ value: CGFloat) -> CGFloat {
+    func constant(_ value: CGFloat) -> CGFloat {
         switch self {
         case .top, .left, .leading, .centerX, .centerY: return value
         case .bottom, .right, .trailing: return -value
