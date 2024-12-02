@@ -9,14 +9,7 @@ import UIKit
 
 extension UIView: Construction {
     
-    private func getXAnchor(of view: HorizontalEdge) -> NSLayoutXAxisAnchor? {
-        if let anchor = view.anchor {
-            return anchor
-        } else {
-            return view.setParentAnchor(of: self.superview, edge: .leftEdge(of: nil))
-        }
-    }
-    
+    // MARK: - X Axis
     @discardableResult
     public func left(
         to view: HorizontalEdge,
@@ -42,6 +35,36 @@ extension UIView: Construction {
                 
             @unknown default:
                 return leftAnchor.constraint(equalTo: anchor, constant: padding)
+            }
+        }
+        
+        return constraint.setPriority(to: priority).activate(isActive)
+    }
+    
+    @discardableResult
+    public func right(
+        to view: HorizontalEdge,
+        padding: CGFloat,
+        relatedBy: AnchorRelation,
+        priority: UILayoutPriority,
+        isActive: Bool
+    ) -> NSLayoutConstraint? {
+        
+        guard let anchor = getXAnchor(of: view, parentViewEdge: .rightEdge(of: nil)) else { return nil }
+        
+        var constraint: NSLayoutConstraint {
+            switch relatedBy {
+            case .equal:
+                return rightAnchor.constraint(equalTo: anchor, constant: padding)
+                
+            case .greaterThanOrEqual:
+                return rightAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
+                
+            case .lessThanOrEqual:
+                return rightAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
+                
+            @unknown default:
+                return rightAnchor.constraint(equalTo: anchor, constant: padding)
             }
         }
         
