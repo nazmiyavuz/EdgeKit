@@ -21,6 +21,8 @@ extension UIView {
         case .trailing: return trailingAnchor as? T
         case .centerX:  return centerXAnchor as? T
         case .centerY:  return centerYAnchor as? T
+        case .width:    return widthAnchor as? T
+        case .height:   return heightAnchor as? T
         }
     }
     

@@ -17,10 +17,12 @@ enum LayoutGuide {
     case trailing
     case centerX
     case centerY
+    case width
+    case height
     
     func constant(_ value: CGFloat) -> CGFloat {
         switch self {
-        case .top, .left, .leading, .centerX, .centerY: return value
+        case .top, .left, .leading, .centerX, .centerY, .width, .height: return value
         case .bottom, .right, .trailing: return -value
         }
     }
