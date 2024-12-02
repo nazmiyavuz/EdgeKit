@@ -24,22 +24,24 @@ extension UIView: Construction {
         relatedBy: AnchorRelation = .equal,
         priority: UILayoutPriority = .required,
         isActive: Bool = true
-    ) -> NSLayoutConstraint {
+    ) -> NSLayoutConstraint? {
         arrangeForAutoLayout()
+        
+        guard let anchor = getXAnchor(of: view) else { return nil }
         
         var constraint: NSLayoutConstraint {
             switch relatedBy {
             case .equal:
-                return leftAnchor.constraint(equalTo: view.anchor, constant: padding)
+                return leftAnchor.constraint(equalTo: anchor, constant: padding)
                 
             case .greaterThanOrEqual:
-                return leftAnchor.constraint(greaterThanOrEqualTo: view.anchor, constant: padding)
+                return leftAnchor.constraint(greaterThanOrEqualTo: anchor, constant: padding)
                 
             case .lessThanOrEqual:
-                return leftAnchor.constraint(lessThanOrEqualTo: view.anchor, constant: padding)
+                return leftAnchor.constraint(lessThanOrEqualTo: anchor, constant: padding)
                 
             @unknown default:
-                return leftAnchor.constraint(equalTo: view.anchor, constant: padding)
+                return leftAnchor.constraint(equalTo: anchor, constant: padding)
             }
         }
         
