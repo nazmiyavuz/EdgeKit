@@ -41,5 +41,44 @@ extension UIView: Omnidirectional {
         return [centerXConstraint, centerYConstraint]
     }
     
+    @discardableResult
+    public func fillParentView(
+        excluding edges: [FourEdges] = [],
+        inSafeArea: Bool = false,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> [NSLayoutConstraint?] {
+        var constraintList: [NSLayoutConstraint?] = []
+        
+        if !edges.contains(.left) {
+            let left = left(to: .parentView(inSafeArea: inSafeArea), padding: padding, relatedBy: relatedBy,
+                 priority: priority, isActive: isActive)
+            constraintList.append(left)
+        }
+        
+        if !edges.contains(.right) {
+            let right = right(to: .parentView(inSafeArea: inSafeArea), padding: padding, relatedBy: relatedBy,
+                              priority: priority, isActive: isActive)
+            constraintList.append(right)
+        }
+        
+        if !edges.contains(.top) {
+            let top = top(to: .parentView(inSafeArea: inSafeArea), padding: padding, relatedBy: relatedBy,
+                          priority: priority, isActive: isActive)
+            constraintList.append(top)
+        }
+        
+        if !edges.contains(.bottom) {
+            let bottom = bottom(to: .parentView(inSafeArea: inSafeArea), padding: padding, relatedBy: relatedBy,
+                                priority: priority, isActive: isActive)
+            constraintList.append(bottom)
+        }
+        
+        return constraintList
+        
+    }
+    
 }
 
