@@ -54,6 +54,20 @@ extension UIView: Horizontal {
     }
     
     @discardableResult
+    public func trailing(
+        to view: HorizontalEdge,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> NSLayoutConstraint? {
+        arrangeForAutoLayout()
+        guard let anchor = getXAnchor(of: view, parentViewEdge: .trailingEdge(of: nil)) else { return nil }
+        let constraint = getXConstraint(padding: padding, with: .trailing, relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
+    }
+    
+    @discardableResult
     public func centerX(
         to view: HorizontalEdge,
         padding: CGFloat = 0,
