@@ -26,6 +26,20 @@ extension UIView: Horizontal {
     }
     
     @discardableResult
+    public func leading(
+        to view: HorizontalEdge,
+        padding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> NSLayoutConstraint? {
+        arrangeForAutoLayout()
+        guard let anchor = getXAnchor(of: view, parentViewEdge: .leadingEdge(of: nil)) else { return nil }
+        let constraint = getXConstraint(padding: padding, with: .leading, relatedBy: relatedBy, anchor: anchor)
+        return constraint?.setPriority(to: priority).activate(isActive)
+    }
+    
+    @discardableResult
     public func right(
         to view: HorizontalEdge,
         padding: CGFloat = 0,
