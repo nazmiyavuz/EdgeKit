@@ -80,5 +80,46 @@ extension UIView: Omnidirectional {
         
     }
     
+    @discardableResult
+    public func anchor(
+        leftAnchor: HorizontalEdge? = nil,
+        topAnchor: VerticalEdge? = nil,
+        rightAnchor: HorizontalEdge? = nil,
+        bottomAnchor: VerticalEdge? = nil,
+        leftPadding: CGFloat = 0,
+        topPadding: CGFloat = 0,
+        rightPadding: CGFloat = 0,
+        bottomPadding: CGFloat = 0,
+        relatedBy: AnchorRelation = .equal,
+        priority: UILayoutPriority = .required,
+        isActive: Bool = true
+    ) -> [NSLayoutConstraint?] {
+        var constraints: [NSLayoutConstraint?] = []
+        if let leftAnchor {
+            let leftConstraint = left(to: leftAnchor, padding: leftPadding, relatedBy: relatedBy,
+                                      priority: priority, isActive: isActive)
+            constraints.append(leftConstraint)
+        }
+        
+        if let topAnchor {
+            let topConstraint = top(to: topAnchor, padding: topPadding, relatedBy: relatedBy,
+                                    priority: priority, isActive: isActive)
+            constraints.append(topConstraint)
+        }
+        
+        if let rightAnchor {
+            let rightConstraint = right(to: rightAnchor, padding: rightPadding, relatedBy: relatedBy,
+                                        priority: priority, isActive: isActive)
+            constraints.append(rightConstraint)
+        }
+        
+        if let bottomAnchor {
+            let bottomConstraint = bottom(to: bottomAnchor, padding: bottomPadding, relatedBy: relatedBy,
+                                          priority: priority, isActive: isActive)
+            constraints.append(bottomConstraint)
+        }
+        return constraints
+    }
+    
 }
 
