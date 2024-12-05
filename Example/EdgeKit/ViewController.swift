@@ -22,12 +22,6 @@ class ViewController: UIViewController {
         $0.layer.cornerRadius = 5
         return $0
     }(UIView())
-    
-    private let helloWorld: UILabel = {
-        $0.text = "Hello World"
-        $0.font = UIFont.boldSystemFont(ofSize: 12)
-        return $0
-    }(UILabel())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +33,13 @@ class ViewController: UIViewController {
         firstView.setSize(width: 200, height: 200)
         
         view.addSubview(secondView)
-        secondView.anchor(leftAnchor: .leftEdge(of: firstView), topAnchor: .bottomEdge(of: firstView),
-                          rightAnchor: .rightEdge(of: firstView), topPadding: 20)
+        secondView.anchor(leftAnchor: .leftEdge(of: firstView),
+                          topAnchor: .bottomEdge(of: firstView),
+                          rightAnchor: .rightEdge(of: firstView),
+                          topPadding: 20)
         secondView.setHeight(100)
         
-        
     }
-
 
 }
 
