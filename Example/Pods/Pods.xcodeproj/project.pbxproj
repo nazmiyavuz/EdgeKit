@@ -8,79 +8,105 @@
 
 /* Begin PBXBuildFile section */
 		054288E8F101E18738FE861A952B219A /* Pods-EdgeKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E004D18ADA5C014827D1F7709F2501AC /* Pods-EdgeKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		128613C264801B5A327EDCF1001D1198 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A403C9E277E157A528853A86A7A04D2 /* LayoutGuide.swift */; };
+		1A8586B6CFC509CD1EE217E875123817 /* VerticalEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E9372D55AEF2E1926DC06E0334625 /* VerticalEdge.swift */; };
+		23FF8C49723D64CF396112EBDB071B80 /* Omnidirectional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC805394671F033D00FB1B334628C2CD /* Omnidirectional.swift */; };
+		304BA135E96A8E97EC147DF4B2059055 /* UIView+Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BE09624BC5C49F296B230CF7B18F8D /* UIView+Vertical.swift */; };
+		340FD29B01EE23BF0F04F2A4CADC7300 /* Dimensional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBCE83E9D2EF0CC0467DD30E0EF605 /* Dimensional.swift */; };
+		34262897D5CA426CCA502CE28E5E6843 /* EdgeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9738842CC4EF3E1B2550F75F010494 /* EdgeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3940F5D02299415C3D979D49052ECFE8 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB76476C2DAD2765E2AA24DF218C345 /* UIView+Utils.swift */; };
+		40BADADE126DB92CDC75CC4C5A3DE100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		46A775A4C8B289B38079908F572AC425 /* Abstracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91F127966BBC513FCF960CBD073D57 /* Abstracts.swift */; };
+		4BE8826A44A3FD28FD44199F726DE5E2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3EB0974A75F87921FC1A47F621F7 /* UIView+Extension.swift */; };
+		4E7D323551956D5E0ADE1755A17CACC2 /* Anchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89164E8F4BC595497CCBD7C117A25B /* Anchorable.swift */; };
+		617549A140256F1C5A918646EBD61F6F /* FourEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0B875EBDA5D4579EAFAFF575B9ABF /* FourEdges.swift */; };
 		664798F31527DC3D748B94F650D1ABFC /* Pods-EdgeKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1300A8B554CB2E98C6E9A95232D8FE69 /* Pods-EdgeKit_Example-dummy.m */; };
 		6E1B9EDBD90DCECBC64D90E72BEDF999 /* Pods-EdgeKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB037331FB985E97B034679D86AB373 /* Pods-EdgeKit_Tests-dummy.m */; };
-		78A026339DC6FB40F3294EAE0F28E496 /* EdgeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1126D6138F27639EC98B075B8F607077 /* EdgeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97A5936470BB2EAB2F4F6DB7DC1EFC8E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF6B38B866F1608F72B85B094FC7A1 /* ReplaceMe.swift */; };
-		CFA14020789435641BAF99F17ED0694F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		765580EEDDE39972550330B00949AAC8 /* HorizontalEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A265437C897F1079F6517D3C886CC7 /* HorizontalEdge.swift */; };
+		8A963291DA5C5BB51F2288A5413A842E /* EdgeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 649791C261752EDC97FF60FBBBB5C73E /* EdgeKit-dummy.m */; };
+		9E7BFBA280BFADFF6C031843D318ECA0 /* UIView+Omnidirectional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69F90822976F16A4E374C6E427F36A /* UIView+Omnidirectional.swift */; };
+		B7E62C55569569145C969048E527EE7D /* Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB514DE530E9437E1CE6D0F33F59722 /* Horizontal.swift */; };
+		CCC1B979578A2059203A1AA1D7B377F5 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90C40321A67E9D9AD0036C5E50DA30 /* NSLayoutConstraint+Extension.swift */; };
 		CFBBE71CC1782CB3E014E42C92AE33B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		D14AD06AEC0E3E29E8763C5B36BCDB7C /* UIView+Dimensional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572EC651207469E73970980919DED4E /* UIView+Dimensional.swift */; };
+		D48990A85DC7AF5C5B45714D410F32BC /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385613A6DBDE7E874795D0FE3627F4C /* ReplaceMe.swift */; };
 		D7C50740E301D59F3ABCE227CE805FA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		D8E2702629BB5F2EF41C153535BD4E51 /* UIView+Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C851FC9631A258A34B6E8A7204482854 /* UIView+Horizontal.swift */; };
 		E63901C5A8C3CC9DCCB2B7D86D112983 /* Pods-EdgeKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E74E09C02A4B80C77C4B01E7F317CD8 /* Pods-EdgeKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEB698F1BB64642F592D2DE47CD31AFD /* EdgeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B601AD60F7C6F0761547F2369685982 /* EdgeKit-dummy.m */; };
+		FD21C61C8CC138B55BC477A281186B23 /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596217B3497C6559D58DA7D0E272CC16 /* Vertical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C6E10930E0FDA9564178AF6B90047B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFB8F59846032591654395B002237FC0;
-			remoteInfo = "Pods-EdgeKit_Example";
-		};
-		CB7537C4C156E06161E7A32622CD1FF1 /* PBXContainerItemProxy */ = {
+		011FF00AD437401F0F0952607D2FA9D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1DA86D812FC66FFC5F262F071F1FFCC1;
 			remoteInfo = EdgeKit;
 		};
+		D894974CC0EC236D99B19C75562B65E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFB8F59846032591654395B002237FC0;
+			remoteInfo = "Pods-EdgeKit_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05F1F1AB320F5C2CFEDB94D698A82A02 /* Pods-EdgeKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EdgeKit_Tests.modulemap"; sourceTree = "<group>"; };
 		0ACE724D22A73DB89E16585EDB786253 /* Pods-EdgeKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Example-Info.plist"; sourceTree = "<group>"; };
-		1126D6138F27639EC98B075B8F607077 /* EdgeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-umbrella.h"; sourceTree = "<group>"; };
+		0C9D3EB0974A75F87921FC1A47F621F7 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1300A8B554CB2E98C6E9A95232D8FE69 /* Pods-EdgeKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EdgeKit_Example-dummy.m"; sourceTree = "<group>"; };
 		181961801281D49CA891BC5F44F2A5D0 /* Pods-EdgeKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A403C9E277E157A528853A86A7A04D2 /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutGuide.swift; sourceTree = "<group>"; };
 		1ADFBC3671EE2A6CE65CD322A308D460 /* Pods-EdgeKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EdgeKit_Tests"; path = Pods_EdgeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D8876AD91B32EA3A320304AAB95CCCA /* EdgeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.release.xcconfig; sourceTree = "<group>"; };
-		2614E8EF4E6BF43D6D78D3A0D57C9E66 /* EdgeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.debug.xcconfig; sourceTree = "<group>"; };
-		2AB332D04CD394955660C2343E773312 /* EdgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-prefix.pch"; sourceTree = "<group>"; };
+		1E774DB69DEB38C21761878A832F0028 /* EdgeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EdgeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		296C00F81FA3CEF63C9A0CD0A30E1477 /* EdgeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.release.xcconfig; sourceTree = "<group>"; };
 		2B3BC3D7C7B71446034DC60E3A0F9AF6 /* Pods-EdgeKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3C69F90822976F16A4E374C6E427F36A /* UIView+Omnidirectional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Omnidirectional.swift"; sourceTree = "<group>"; };
+		3C91F127966BBC513FCF960CBD073D57 /* Abstracts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Abstracts.swift; sourceTree = "<group>"; };
 		3E74E09C02A4B80C77C4B01E7F317CD8 /* Pods-EdgeKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EdgeKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		438AAAD8EDA41B0B4C4875AE5BE313AC /* EdgeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.debug.xcconfig; sourceTree = "<group>"; };
+		5385613A6DBDE7E874795D0FE3627F4C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = EdgeKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		596217B3497C6559D58DA7D0E272CC16 /* Vertical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vertical.swift; sourceTree = "<group>"; };
 		5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EdgeKit; path = EdgeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649791C261752EDC97FF60FBBBB5C73E /* EdgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EdgeKit-dummy.m"; sourceTree = "<group>"; };
 		65522E28B52E4F4BD9439CC4108AB436 /* Pods-EdgeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6677BED50545B0C1D6D05AC640014B1F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		671141B86324CEDB2F3AC4BABE3C13C6 /* Pods-EdgeKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EdgeKit_Example.modulemap"; sourceTree = "<group>"; };
-		67A553371CABC8FDB01F0ACB8B76CE2C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		67BE09624BC5C49F296B230CF7B18F8D /* UIView+Vertical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Vertical.swift"; sourceTree = "<group>"; };
 		6F460A132794A8A8CFBD5193EE1B9CB1 /* Pods-EdgeKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EdgeKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		734BB645F2AA01BD6D29D30CAF5EC717 /* Pods-EdgeKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EdgeKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7B601AD60F7C6F0761547F2369685982 /* EdgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EdgeKit-dummy.m"; sourceTree = "<group>"; };
+		761D3BD3AE5F3C8D03A22D481D077D98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		767E9372D55AEF2E1926DC06E0334625 /* VerticalEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalEdge.swift; sourceTree = "<group>"; };
+		7EB76476C2DAD2765E2AA24DF218C345 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		8FEBCE83E9D2EF0CC0467DD30E0EF605 /* Dimensional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimensional.swift; sourceTree = "<group>"; };
+		91D0B875EBDA5D4579EAFAFF575B9ABF /* FourEdges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FourEdges.swift; sourceTree = "<group>"; };
 		91E4B95B0998B73C2F7A421166B0AB00 /* Pods-EdgeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		98E2532EB43A50938388B98E798E7B6F /* EdgeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EdgeKit.modulemap; sourceTree = "<group>"; };
+		929E854D23B6DA95BB527C177471F8A9 /* EdgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A45CE810A4E5CEB94980BCD875F695AD /* EdgeKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EdgeKit-Info.plist"; sourceTree = "<group>"; };
+		A572EC651207469E73970980919DED4E /* UIView+Dimensional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Dimensional.swift"; sourceTree = "<group>"; };
 		A66081AA729079D1ABC9562762DA2172 /* Pods-EdgeKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EdgeKit_Example"; path = Pods_EdgeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A82DD5E588C9629A9A1EDFF536520665 /* EdgeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EdgeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BEAF6B38B866F1608F72B85B094FC7A1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = EdgeKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		AE9738842CC4EF3E1B2550F75F010494 /* EdgeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-umbrella.h"; sourceTree = "<group>"; };
+		B0F8FF0EB7ACF3E136988368A60DC2E9 /* EdgeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EdgeKit.modulemap; sourceTree = "<group>"; };
+		BC805394671F033D00FB1B334628C2CD /* Omnidirectional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Omnidirectional.swift; sourceTree = "<group>"; };
+		C0A265437C897F1079F6517D3C886CC7 /* HorizontalEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalEdge.swift; sourceTree = "<group>"; };
 		C150E69FD0BD204A2DD79660DF2C885B /* Pods-EdgeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C7DE58AC329D3140598918069E971B87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C851FC9631A258A34B6E8A7204482854 /* UIView+Horizontal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Horizontal.swift"; sourceTree = "<group>"; };
+		CBB514DE530E9437E1CE6D0F33F59722 /* Horizontal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Horizontal.swift; sourceTree = "<group>"; };
+		CC90C40321A67E9D9AD0036C5E50DA30 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		D9D941B5AAE264C7E8E4FB670F91A3E0 /* Pods-EdgeKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EdgeKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E004D18ADA5C014827D1F7709F2501AC /* Pods-EdgeKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EdgeKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		ED89164E8F4BC595497CCBD7C117A25B /* Anchorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Anchorable.swift; sourceTree = "<group>"; };
+		F256A5C9ADD1FD00F84209922A4C21E5 /* EdgeKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EdgeKit-Info.plist"; sourceTree = "<group>"; };
 		FBB037331FB985E97B034679D86AB373 /* Pods-EdgeKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EdgeKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		FF6529629EA94DE3AA0CF48BEC3C2DF3 /* Pods-EdgeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFFDD9292BAD7F229ACD09FD4BDDBE39 /* Pods-EdgeKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B77D3D690CC104AFECFA5B141C36685 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFA14020789435641BAF99F17ED0694F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		34D9BCFA3D09EE1896219CB610813080 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +120,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBBE71CC1782CB3E014E42C92AE33B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9402711DCDECD939B919F6E1F5CFCBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BADADE126DB92CDC75CC4C5A3DE100 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +150,33 @@
 			path = "Target Support Files/Pods-EdgeKit_Tests";
 			sourceTree = "<group>";
 		};
+		2F86AB659B74B007881665D9991AEB6D /* EdgeKit */ = {
+			isa = PBXGroup;
+			children = (
+				5385613A6DBDE7E874795D0FE3627F4C /* ReplaceMe.swift */,
+				35C501A3221EC24741879CCD60CA0E41 /* Enums */,
+				96F84349FD0C474D8EE49F67F7390C31 /* Extensions */,
+				810877D83B7C6908328743889AD08C47 /* Pod */,
+				8538DD3DCC239F0A5A3A53627E9C5119 /* Protocols */,
+				DA416A51EFF7F46B7CBC3D0AC26BEB54 /* Support Files */,
+				F755AD8EA0635EC8013FA8D6E1901FDF /* Utils */,
+			);
+			name = EdgeKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		35C501A3221EC24741879CCD60CA0E41 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				91D0B875EBDA5D4579EAFAFF575B9ABF /* FourEdges.swift */,
+				C0A265437C897F1079F6517D3C886CC7 /* HorizontalEdge.swift */,
+				1A403C9E277E157A528853A86A7A04D2 /* LayoutGuide.swift */,
+				767E9372D55AEF2E1926DC06E0334625 /* VerticalEdge.swift */,
+			);
+			name = Enums;
+			path = EdgeKit/Classes/Enums;
+			sourceTree = "<group>";
+		};
 		3CC9B796BCE15FC0F54827E60D319434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,38 +196,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		829690D600EC3B98494976D17E30CE2F /* EdgeKit */ = {
+		4742C42F0616E1981F47D0DCA93D8E5A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BEAF6B38B866F1608F72B85B094FC7A1 /* ReplaceMe.swift */,
-				FF850D4FE31F1C269B9983FDE5DA8F4A /* Pod */,
-				A5E30C5D0A58C0D93ADAA378EB63156F /* Support Files */,
-			);
-			name = EdgeKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9ECC931A65325BB50B3F97D5C0E40B0D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				829690D600EC3B98494976D17E30CE2F /* EdgeKit */,
+				2F86AB659B74B007881665D9991AEB6D /* EdgeKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		A5E30C5D0A58C0D93ADAA378EB63156F /* Support Files */ = {
+		810877D83B7C6908328743889AD08C47 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				98E2532EB43A50938388B98E798E7B6F /* EdgeKit.modulemap */,
-				7B601AD60F7C6F0761547F2369685982 /* EdgeKit-dummy.m */,
-				A45CE810A4E5CEB94980BCD875F695AD /* EdgeKit-Info.plist */,
-				2AB332D04CD394955660C2343E773312 /* EdgeKit-prefix.pch */,
-				1126D6138F27639EC98B075B8F607077 /* EdgeKit-umbrella.h */,
-				2614E8EF4E6BF43D6D78D3A0D57C9E66 /* EdgeKit.debug.xcconfig */,
-				1D8876AD91B32EA3A320304AAB95CCCA /* EdgeKit.release.xcconfig */,
+				1E774DB69DEB38C21761878A832F0028 /* EdgeKit.podspec */,
+				761D3BD3AE5F3C8D03A22D481D077D98 /* LICENSE */,
+				C7DE58AC329D3140598918069E971B87 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EdgeKit";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8538DD3DCC239F0A5A3A53627E9C5119 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ED89164E8F4BC595497CCBD7C117A25B /* Anchorable.swift */,
+				8FEBCE83E9D2EF0CC0467DD30E0EF605 /* Dimensional.swift */,
+				CBB514DE530E9437E1CE6D0F33F59722 /* Horizontal.swift */,
+				BC805394671F033D00FB1B334628C2CD /* Omnidirectional.swift */,
+				596217B3497C6559D58DA7D0E272CC16 /* Vertical.swift */,
+			);
+			name = Protocols;
+			path = EdgeKit/Classes/Protocols;
+			sourceTree = "<group>";
+		};
+		96F84349FD0C474D8EE49F67F7390C31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC90C40321A67E9D9AD0036C5E50DA30 /* NSLayoutConstraint+Extension.swift */,
+				A572EC651207469E73970980919DED4E /* UIView+Dimensional.swift */,
+				0C9D3EB0974A75F87921FC1A47F621F7 /* UIView+Extension.swift */,
+				C851FC9631A258A34B6E8A7204482854 /* UIView+Horizontal.swift */,
+				3C69F90822976F16A4E374C6E427F36A /* UIView+Omnidirectional.swift */,
+				7EB76476C2DAD2765E2AA24DF218C345 /* UIView+Utils.swift */,
+				67BE09624BC5C49F296B230CF7B18F8D /* UIView+Vertical.swift */,
+			);
+			name = Extensions;
+			path = EdgeKit/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		B99078069D5BD0D055FFA09C357665D6 /* Pods-EdgeKit_Example */ = {
@@ -190,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9ECC931A65325BB50B3F97D5C0E40B0D /* Development Pods */,
+				4742C42F0616E1981F47D0DCA93D8E5A /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				3CC9B796BCE15FC0F54827E60D319434 /* Products */,
 				3F1A0214996C81E9D78174E966E1DD00 /* Targets Support Files */,
@@ -205,6 +278,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA416A51EFF7F46B7CBC3D0AC26BEB54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0F8FF0EB7ACF3E136988368A60DC2E9 /* EdgeKit.modulemap */,
+				649791C261752EDC97FF60FBBBB5C73E /* EdgeKit-dummy.m */,
+				F256A5C9ADD1FD00F84209922A4C21E5 /* EdgeKit-Info.plist */,
+				929E854D23B6DA95BB527C177471F8A9 /* EdgeKit-prefix.pch */,
+				AE9738842CC4EF3E1B2550F75F010494 /* EdgeKit-umbrella.h */,
+				438AAAD8EDA41B0B4C4875AE5BE313AC /* EdgeKit.debug.xcconfig */,
+				296C00F81FA3CEF63C9A0CD0A30E1477 /* EdgeKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EdgeKit";
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,19 +301,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FF850D4FE31F1C269B9983FDE5DA8F4A /* Pod */ = {
+		F755AD8EA0635EC8013FA8D6E1901FDF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A82DD5E588C9629A9A1EDFF536520665 /* EdgeKit.podspec */,
-				67A553371CABC8FDB01F0ACB8B76CE2C /* LICENSE */,
-				6677BED50545B0C1D6D05AC640014B1F /* README.md */,
+				3C91F127966BBC513FCF960CBD073D57 /* Abstracts.swift */,
 			);
-			name = Pod;
+			name = Utils;
+			path = EdgeKit/Classes/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		149E942A2A9383F561D370C4FE6542D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34262897D5CA426CCA502CE28E5E6843 /* EdgeKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AEABEDBE2A48FC5AA1CEEB0099663DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,14 +334,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				054288E8F101E18738FE861A952B219A /* Pods-EdgeKit_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A79DA352CE193627AF0889FA9A24E561 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78A026339DC6FB40F3294EAE0F28E496 /* EdgeKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +352,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				904E45C65A346AB4D1397BE9A88822E2 /* PBXTargetDependency */,
+				6D1BBDEB0E8FE27C745C650739982347 /* PBXTargetDependency */,
 			);
 			name = "Pods-EdgeKit_Tests";
 			productName = Pods_EdgeKit_Tests;
@@ -274,12 +361,12 @@
 		};
 		1DA86D812FC66FFC5F262F071F1FFCC1 /* EdgeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFC28D6AA57E0409CBB9272EECE00A04 /* Build configuration list for PBXNativeTarget "EdgeKit" */;
+			buildConfigurationList = E2DBB07A1D38AC77BAB683230358248C /* Build configuration list for PBXNativeTarget "EdgeKit" */;
 			buildPhases = (
-				A79DA352CE193627AF0889FA9A24E561 /* Headers */,
-				DACD12C06DEA72203C6B256D3751D38A /* Sources */,
-				2B77D3D690CC104AFECFA5B141C36685 /* Frameworks */,
-				30243648DE6E8022F4E7DAC04594D1A9 /* Resources */,
+				149E942A2A9383F561D370C4FE6542D4 /* Headers */,
+				D6BB002730EC1C7419932DEF3FE9E3B2 /* Sources */,
+				9402711DCDECD939B919F6E1F5CFCBDD /* Frameworks */,
+				725AC438EEA953C08B3D6581EF6E6121 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +389,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1A561FA59BE1185D0D42ACB9D112B4AF /* PBXTargetDependency */,
+				A861D510A2434F44D5151B59EF85A2B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-EdgeKit_Example";
 			productName = Pods_EdgeKit_Example;
@@ -341,14 +428,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		30243648DE6E8022F4E7DAC04594D1A9 /* Resources */ = {
+		6E5F93DD58ACA3B69848DB113E17E243 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E5F93DD58ACA3B69848DB113E17E243 /* Resources */ = {
+		725AC438EEA953C08B3D6581EF6E6121 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,12 +460,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DACD12C06DEA72203C6B256D3751D38A /* Sources */ = {
+		D6BB002730EC1C7419932DEF3FE9E3B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB698F1BB64642F592D2DE47CD31AFD /* EdgeKit-dummy.m in Sources */,
-				97A5936470BB2EAB2F4F6DB7DC1EFC8E /* ReplaceMe.swift in Sources */,
+				46A775A4C8B289B38079908F572AC425 /* Abstracts.swift in Sources */,
+				4E7D323551956D5E0ADE1755A17CACC2 /* Anchorable.swift in Sources */,
+				340FD29B01EE23BF0F04F2A4CADC7300 /* Dimensional.swift in Sources */,
+				8A963291DA5C5BB51F2288A5413A842E /* EdgeKit-dummy.m in Sources */,
+				617549A140256F1C5A918646EBD61F6F /* FourEdges.swift in Sources */,
+				B7E62C55569569145C969048E527EE7D /* Horizontal.swift in Sources */,
+				765580EEDDE39972550330B00949AAC8 /* HorizontalEdge.swift in Sources */,
+				128613C264801B5A327EDCF1001D1198 /* LayoutGuide.swift in Sources */,
+				CCC1B979578A2059203A1AA1D7B377F5 /* NSLayoutConstraint+Extension.swift in Sources */,
+				23FF8C49723D64CF396112EBDB071B80 /* Omnidirectional.swift in Sources */,
+				D48990A85DC7AF5C5B45714D410F32BC /* ReplaceMe.swift in Sources */,
+				D14AD06AEC0E3E29E8763C5B36BCDB7C /* UIView+Dimensional.swift in Sources */,
+				4BE8826A44A3FD28FD44199F726DE5E2 /* UIView+Extension.swift in Sources */,
+				D8E2702629BB5F2EF41C153535BD4E51 /* UIView+Horizontal.swift in Sources */,
+				9E7BFBA280BFADFF6C031843D318ECA0 /* UIView+Omnidirectional.swift in Sources */,
+				3940F5D02299415C3D979D49052ECFE8 /* UIView+Utils.swift in Sources */,
+				304BA135E96A8E97EC147DF4B2059055 /* UIView+Vertical.swift in Sources */,
+				FD21C61C8CC138B55BC477A281186B23 /* Vertical.swift in Sources */,
+				1A8586B6CFC509CD1EE217E875123817 /* VerticalEdge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,21 +497,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A561FA59BE1185D0D42ACB9D112B4AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EdgeKit;
-			target = 1DA86D812FC66FFC5F262F071F1FFCC1 /* EdgeKit */;
-			targetProxy = CB7537C4C156E06161E7A32622CD1FF1 /* PBXContainerItemProxy */;
-		};
-		904E45C65A346AB4D1397BE9A88822E2 /* PBXTargetDependency */ = {
+		6D1BBDEB0E8FE27C745C650739982347 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-EdgeKit_Example";
 			target = AFB8F59846032591654395B002237FC0 /* Pods-EdgeKit_Example */;
-			targetProxy = 0C6E10930E0FDA9564178AF6B90047B9 /* PBXContainerItemProxy */;
+			targetProxy = D894974CC0EC236D99B19C75562B65E4 /* PBXContainerItemProxy */;
+		};
+		A861D510A2434F44D5151B59EF85A2B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EdgeKit;
+			target = 1DA86D812FC66FFC5F262F071F1FFCC1 /* EdgeKit */;
+			targetProxy = 011FF00AD437401F0F0952607D2FA9D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		04EE8C6E5AFA3C938333CC118EB299D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296C00F81FA3CEF63C9A0CD0A30E1477 /* EdgeKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/EdgeKit/EdgeKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/EdgeKit/EdgeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EdgeKit/EdgeKit.modulemap";
+				PRODUCT_MODULE_NAME = EdgeKit;
+				PRODUCT_NAME = EdgeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0C59ECA372F454227438A3A859FD1D9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C150E69FD0BD204A2DD79660DF2C885B /* Pods-EdgeKit_Example.debug.xcconfig */;
@@ -479,41 +619,6 @@
 			};
 			name = Release;
 		};
-		78F535CFB503133F8D284E6461A18F13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2614E8EF4E6BF43D6D78D3A0D57C9E66 /* EdgeKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/EdgeKit/EdgeKit-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/EdgeKit/EdgeKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EdgeKit/EdgeKit.modulemap";
-				PRODUCT_MODULE_NAME = EdgeKit;
-				PRODUCT_NAME = EdgeKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -576,9 +681,9 @@
 			};
 			name = Release;
 		};
-		B0DD2F9F4CFBCFDB51D1C5B499685426 /* Release */ = {
+		B52740E025CAE4B3306E5CAF93DE8089 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D8876AD91B32EA3A320304AAB95CCCA /* EdgeKit.release.xcconfig */;
+			baseConfigurationReference = 438AAAD8EDA41B0B4C4875AE5BE313AC /* EdgeKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -606,11 +711,10 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -779,11 +883,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFC28D6AA57E0409CBB9272EECE00A04 /* Build configuration list for PBXNativeTarget "EdgeKit" */ = {
+		E2DBB07A1D38AC77BAB683230358248C /* Build configuration list for PBXNativeTarget "EdgeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78F535CFB503133F8D284E6461A18F13 /* Debug */,
-				B0DD2F9F4CFBCFDB51D1C5B499685426 /* Release */,
+				B52740E025CAE4B3306E5CAF93DE8089 /* Debug */,
+				04EE8C6E5AFA3C938333CC118EB299D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
