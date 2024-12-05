@@ -1,0 +1,16 @@
+PODS:
+  - EdgeKit (0.1.0)
+
+DEPENDENCIES:
+  - EdgeKit (from `../`)
+
+EXTERNAL SOURCES:
+  EdgeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EdgeKit: 35c4233cd2b02d62b14173d058dd1dd836e09917
+
+PODFILE CHECKSUM: b7f6bfcec69cf2d67b775224391120e39c2a311b
+
+COCOAPODS: 1.16.2

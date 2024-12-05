@@ -1,0 +1,6 @@
+framework module Pods_EdgeKit_Example {
+  umbrella header "Pods-EdgeKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
