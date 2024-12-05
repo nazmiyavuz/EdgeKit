@@ -73,26 +73,13 @@ Simply add the following line to your Podfile:
 pod 'EdgeKit'
 ```
 
-##### For the stable version
+#### For the stable version
 
 ```ruby
 pod 'EdgeKit', :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :branch => 'main'
 ```
 
-or
-
-```ruby
-platform :ios, '12.0'
-use_frameworks!
-
-target '<Your Target Name>' do
-
-    pod 'EdgeKit', :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :branch => 'main'
-
-end
-```
-
-##### For the exact version
+#### For the exact version
 
 ```ruby
 pod 'EdgeKit', '~> 1.0.5'
