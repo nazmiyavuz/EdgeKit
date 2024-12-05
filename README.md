@@ -99,3 +99,18 @@ Note: Please update the latest version or `main` branch of the EdgeKit repositor
 ## License
 
 EdgeKit is available under the MIT license. See the [LICENSE](https://github.com/nazmiyavuz/EdgeKit/blob/main/LICENSE) file for more info.
+
+## Feedback
+
+Find a bug or have a feature request? Please file an <a href="https://github.com/nazmiyavuz/EdgeKit/issues" targe="_blank">issue</a>!
+
+It would be great if you could read our [documentation](https://github.com/nazmiyavuz/EdgeKit/wiki) first or search in the issues before you post, to avoid duplicates.
+
+## Contribute
+
+You can improve the [wiki](https://github.com/nazmiyavuz/EdgeKit/wiki) or discuss with us in the [issues](https://github.com/nazmiyavuz/EdgeKit/issues).
+
+## Contact
+
+[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me?&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=F95454)](mailto:nazmiyavuz@gmail.com)
+[![](https://img.shields.io/badge/LinkedIn-0077B5?e&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazmiyavuz/)
