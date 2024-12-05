@@ -67,21 +67,47 @@ class ViewController: UIViewController {
 
 ### CocoaPods
 
-EdgeKit is available through [CocoaPods](https://cocoapods.org/pods/EdgeKit). To install
-it, simply add the following line to your Podfile:
+Simply add the following line to your Podfile:
 
 ```ruby
 pod 'EdgeKit'
 ```
 
+##### For the stable version
+
+```ruby
+pod 'EdgeKit', :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :branch => 'main'
+```
+
+or
+
+```ruby
+platform :ios, '12.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+
+    pod 'EdgeKit', :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :branch => 'main'
+
+end
+```
+
+##### For the exact version
+
+```ruby
+pod 'EdgeKit', '~> 1.0.5'
+```
+
 ### Swift Package Manager
 
 EdgeKit is available through [Swift Package Manager](https://swift.org/package-manager/). To install
-it, in Xcode select `File` > `Swift Packages` > `Add Package Dependency...` and add TinyConstraints repository URL:
+it, in Xcode select `File` > `Add Package Dependencies...` and add EdgeKit repository URL:
 
-```
+```url
 https://github.com/nazmiyavuz/EdgeKit.git
 ```
+
+Note: Please update the latest version or `main` branch of the EdgeKit repository in order to get the latest features.
 
 ## License
 
