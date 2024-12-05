@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EdgeKit'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'EdgeKit is a library to make Auto Layout easily on iOS.'
   s.description      = <<-DESC
 EdgeKit is a library to make Auto Layout easily on iOS. You can use it to make Auto Layout easily.
