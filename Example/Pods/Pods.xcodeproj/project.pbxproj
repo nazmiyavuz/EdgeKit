@@ -60,8 +60,8 @@
 		1300A8B554CB2E98C6E9A95232D8FE69 /* Pods-EdgeKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EdgeKit_Example-dummy.m"; sourceTree = "<group>"; };
 		181961801281D49CA891BC5F44F2A5D0 /* Pods-EdgeKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1A403C9E277E157A528853A86A7A04D2 /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutGuide.swift; sourceTree = "<group>"; };
-		1ADFBC3671EE2A6CE65CD322A308D460 /* Pods-EdgeKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EdgeKit_Tests"; path = Pods_EdgeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E774DB69DEB38C21761878A832F0028 /* EdgeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EdgeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1ADFBC3671EE2A6CE65CD322A308D460 /* Pods_EdgeKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdgeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E774DB69DEB38C21761878A832F0028 /* EdgeKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EdgeKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		296C00F81FA3CEF63C9A0CD0A30E1477 /* EdgeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.release.xcconfig; sourceTree = "<group>"; };
 		2B3BC3D7C7B71446034DC60E3A0F9AF6 /* Pods-EdgeKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdgeKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -71,29 +71,29 @@
 		438AAAD8EDA41B0B4C4875AE5BE313AC /* EdgeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EdgeKit.debug.xcconfig; sourceTree = "<group>"; };
 		5385613A6DBDE7E874795D0FE3627F4C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = EdgeKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		596217B3497C6559D58DA7D0E272CC16 /* Vertical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vertical.swift; sourceTree = "<group>"; };
-		5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EdgeKit; path = EdgeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EdgeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		649791C261752EDC97FF60FBBBB5C73E /* EdgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EdgeKit-dummy.m"; sourceTree = "<group>"; };
 		65522E28B52E4F4BD9439CC4108AB436 /* Pods-EdgeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		671141B86324CEDB2F3AC4BABE3C13C6 /* Pods-EdgeKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EdgeKit_Example.modulemap"; sourceTree = "<group>"; };
 		67BE09624BC5C49F296B230CF7B18F8D /* UIView+Vertical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Vertical.swift"; sourceTree = "<group>"; };
 		6F460A132794A8A8CFBD5193EE1B9CB1 /* Pods-EdgeKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EdgeKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		734BB645F2AA01BD6D29D30CAF5EC717 /* Pods-EdgeKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EdgeKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		761D3BD3AE5F3C8D03A22D481D077D98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		761D3BD3AE5F3C8D03A22D481D077D98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		767E9372D55AEF2E1926DC06E0334625 /* VerticalEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalEdge.swift; sourceTree = "<group>"; };
 		7EB76476C2DAD2765E2AA24DF218C345 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		8FEBCE83E9D2EF0CC0467DD30E0EF605 /* Dimensional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dimensional.swift; sourceTree = "<group>"; };
 		91D0B875EBDA5D4579EAFAFF575B9ABF /* FourEdges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FourEdges.swift; sourceTree = "<group>"; };
 		91E4B95B0998B73C2F7A421166B0AB00 /* Pods-EdgeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		929E854D23B6DA95BB527C177471F8A9 /* EdgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A572EC651207469E73970980919DED4E /* UIView+Dimensional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Dimensional.swift"; sourceTree = "<group>"; };
-		A66081AA729079D1ABC9562762DA2172 /* Pods-EdgeKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EdgeKit_Example"; path = Pods_EdgeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66081AA729079D1ABC9562762DA2172 /* Pods_EdgeKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdgeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9738842CC4EF3E1B2550F75F010494 /* EdgeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EdgeKit-umbrella.h"; sourceTree = "<group>"; };
 		B0F8FF0EB7ACF3E136988368A60DC2E9 /* EdgeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EdgeKit.modulemap; sourceTree = "<group>"; };
 		BC805394671F033D00FB1B334628C2CD /* Omnidirectional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Omnidirectional.swift; sourceTree = "<group>"; };
 		C0A265437C897F1079F6517D3C886CC7 /* HorizontalEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalEdge.swift; sourceTree = "<group>"; };
 		C150E69FD0BD204A2DD79660DF2C885B /* Pods-EdgeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdgeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C7DE58AC329D3140598918069E971B87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C7DE58AC329D3140598918069E971B87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C851FC9631A258A34B6E8A7204482854 /* UIView+Horizontal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Horizontal.swift"; sourceTree = "<group>"; };
 		CBB514DE530E9437E1CE6D0F33F59722 /* Horizontal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Horizontal.swift; sourceTree = "<group>"; };
 		CC90C40321A67E9D9AD0036C5E50DA30 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
@@ -180,9 +180,9 @@
 		3CC9B796BCE15FC0F54827E60D319434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit */,
-				A66081AA729079D1ABC9562762DA2172 /* Pods-EdgeKit_Example */,
-				1ADFBC3671EE2A6CE65CD322A308D460 /* Pods-EdgeKit_Tests */,
+				5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit.framework */,
+				A66081AA729079D1ABC9562762DA2172 /* Pods_EdgeKit_Example.framework */,
+				1ADFBC3671EE2A6CE65CD322A308D460 /* Pods_EdgeKit_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 			);
 			name = "Pods-EdgeKit_Tests";
 			productName = Pods_EdgeKit_Tests;
-			productReference = 1ADFBC3671EE2A6CE65CD322A308D460 /* Pods-EdgeKit_Tests */;
+			productReference = 1ADFBC3671EE2A6CE65CD322A308D460 /* Pods_EdgeKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1DA86D812FC66FFC5F262F071F1FFCC1 /* EdgeKit */ = {
@@ -374,7 +374,7 @@
 			);
 			name = EdgeKit;
 			productName = EdgeKit;
-			productReference = 5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit */;
+			productReference = 5FA45C0CFC01A2210949C1FA1DD3998F /* EdgeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AFB8F59846032591654395B002237FC0 /* Pods-EdgeKit_Example */ = {
@@ -393,7 +393,7 @@
 			);
 			name = "Pods-EdgeKit_Example";
 			productName = Pods_EdgeKit_Example;
-			productReference = A66081AA729079D1ABC9562762DA2172 /* Pods-EdgeKit_Example */;
+			productReference = A66081AA729079D1ABC9562762DA2172 /* Pods_EdgeKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -414,8 +414,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 3CC9B796BCE15FC0F54827E60D319434 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -531,7 +529,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/EdgeKit/EdgeKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EdgeKit/EdgeKit.modulemap";
 				PRODUCT_MODULE_NAME = EdgeKit;
@@ -566,7 +564,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-EdgeKit_Example/Pods-EdgeKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EdgeKit_Example/Pods-EdgeKit_Example.modulemap";
@@ -601,7 +599,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-EdgeKit_Tests/Pods-EdgeKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EdgeKit_Tests/Pods-EdgeKit_Tests.modulemap";
@@ -674,8 +672,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -700,7 +697,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/EdgeKit/EdgeKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EdgeKit/EdgeKit.modulemap";
 				PRODUCT_MODULE_NAME = EdgeKit;
@@ -800,7 +797,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-EdgeKit_Tests/Pods-EdgeKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EdgeKit_Tests/Pods-EdgeKit_Tests.modulemap";
@@ -835,7 +832,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-EdgeKit_Example/Pods-EdgeKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EdgeKit_Example/Pods-EdgeKit_Example.modulemap";
