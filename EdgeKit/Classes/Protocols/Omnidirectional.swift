@@ -61,7 +61,14 @@ public protocol Omnidirectional {
     
     /// The center alignment of the related view according to the another one
     /// - Parameters:
-    ///   - view: The first attribute in a constraint.
+    ///   - edges: The list which includes the edges that do not need the constraint in this function.
+    ///   - inSafeArea: A boolean value for the view controller's root view, the layout guide accommodates the
+    ///   status bar, other visible bars, and any additional insets that you specified using the
+    ///   additionalSafeAreaInsets property of your view controller. For other views in the view hierarchy,
+    ///   the layout guide reflects only the portion of the view that is covered by other content.
+    ///   For example, if a view is entirely within the safe area of its superview,
+    ///   the layout guide edges are equal to the edges of the view.
+    ///   The default value of inSafeArea is `false`.
     ///   - padding: The constant offset for the constraint. The default value is 0.
     ///   - relatedBy: The relation between the first attribute
     ///   and the modified second attribute in a constraint. The default value is equal.
