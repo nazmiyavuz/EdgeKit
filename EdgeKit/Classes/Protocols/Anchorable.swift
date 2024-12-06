@@ -17,4 +17,7 @@ public protocol Anchorable {
     
     /// A function to remove all constraints of subviews of the related UIView.
     func removeAllConstraints()
+    
+    /// Get and set the corner radius of the related UIView
+    var cornerRadius: CGFloat { get set }
 }
