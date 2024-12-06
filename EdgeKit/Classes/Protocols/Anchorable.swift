@@ -48,4 +48,9 @@ public protocol Anchorable {
     /// This behavior occurs despite the fact that the property declaration appears to use
     /// the default assign semantics for object retention.
     var borderColor: UIColor? { get set }
+    
+    /// The blur radius (in points) used to render the layer’s shadow.
+    ///
+    /// You specify the radius The default value of this property is 3.0.
+    var shadowRadius: CGFloat { get set }
 }

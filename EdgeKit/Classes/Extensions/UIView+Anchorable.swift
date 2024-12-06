@@ -56,4 +56,13 @@ extension UIView: Anchorable {
             }
         }
     }
+    
+    public var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
 }
