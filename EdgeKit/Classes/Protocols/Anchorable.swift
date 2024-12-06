@@ -23,4 +23,7 @@ public protocol Anchorable {
     
     /// Get and set the border width of the related UIView
     var borderWidth: CGFloat { get set }
+    
+    /// Get and set the border color of the related UIView
+    var borderColor: UIColor? { get set }
 }
