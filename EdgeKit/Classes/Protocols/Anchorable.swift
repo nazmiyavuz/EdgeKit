@@ -68,4 +68,9 @@ public protocol Anchorable {
     /// The value in this property must be in the range 0.0 (transparent) to 1.0 (opaque).
     /// The default value of this property is 0.0.
     var shadowOpacity: Float { get set }
+    
+    /// The offset (in points) of the layer’s shadow.
+    ///
+    /// The default value of this property is (0.0, -3.0).
+    var shadowOffset: CGSize { get set }
 }

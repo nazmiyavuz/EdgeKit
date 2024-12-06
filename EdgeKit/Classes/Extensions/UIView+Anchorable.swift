@@ -91,4 +91,13 @@ extension UIView: Anchorable {
         }
     }
     
+    public var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    
 }
