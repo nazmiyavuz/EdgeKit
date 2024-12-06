@@ -20,4 +20,7 @@ public protocol Anchorable {
     
     /// Get and set the corner radius of the related UIView
     var cornerRadius: CGFloat { get set }
+    
+    /// Get and set the border width of the related UIView
+    var borderWidth: CGFloat { get set }
 }
