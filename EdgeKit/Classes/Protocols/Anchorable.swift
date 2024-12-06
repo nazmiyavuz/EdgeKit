@@ -22,6 +22,13 @@ public protocol Anchorable {
     var cornerRadius: CGFloat { get set }
     
     /// Get and set the border width of the related UIView
+    ///
+    /// The width of the layer’s border.
+    /// When this value is greater than 0.0, the layer draws a border using the current borderColor value.
+    /// The border is drawn inset from the receiver’s bounds by the value specified in this property.
+    /// It is composited above the receiver’s contents and sublayers
+    /// and includes the effects of the cornerRadius property.
+    /// The default value of this property is 0.0.
     var borderWidth: CGFloat { get set }
     
     /// The color of the layer’s border.
