@@ -24,6 +24,12 @@ public protocol Anchorable {
     /// Get and set the border width of the related UIView
     var borderWidth: CGFloat { get set }
     
-    /// Get and set the border color of the related UIView
+    /// The color of the layer’s border.
+    ///
+    /// The default value of this property is an opaque black color.
+    ///
+    /// The value of this property is retained using the Core Foundation retain/release semantics.
+    /// This behavior occurs despite the fact that the property declaration appears to use
+    /// the default assign semantics for object retention.
     var borderColor: UIColor? { get set }
 }
