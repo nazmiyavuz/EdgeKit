@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 EdgeKit is a library to make Auto Layout easily on iOS. You can use it to make Auto Layout easily.
                        DESC
 
+  s.readme           = 'https://github.com/nazmiyavuz/EdgeKit/blob/main/README.md'
   s.homepage         = 'https://github.com/nazmiyavuz/EdgeKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nazmiyavuz' => 'nazmiyavuz@gmail.com' }
