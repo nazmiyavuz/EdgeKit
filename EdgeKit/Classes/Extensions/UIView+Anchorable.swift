@@ -81,4 +81,14 @@ extension UIView: Anchorable {
             }
         }
     }
+    
+    public var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
 }

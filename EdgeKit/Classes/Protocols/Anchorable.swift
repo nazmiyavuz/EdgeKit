@@ -62,4 +62,10 @@ public protocol Anchorable {
     /// This behavior occurs despite the fact that the property declaration appears to
     /// use the default assign semantics for object retention.
     var shadowColor: UIColor? { get set }
+    
+    /// The opacity of the layer’s shadow.
+    ///
+    /// The value in this property must be in the range 0.0 (transparent) to 1.0 (opaque).
+    /// The default value of this property is 0.0.
+    var shadowOpacity: Float { get set }
 }
