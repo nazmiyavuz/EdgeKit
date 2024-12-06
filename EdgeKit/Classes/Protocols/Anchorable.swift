@@ -19,6 +19,15 @@ public protocol Anchorable {
     func removeAllConstraints()
     
     /// Get and set the corner radius of the related UIView
+    ///
+    /// The radius to use when drawing rounded corners for the layer’s background.
+    ///
+    /// Setting the radius to a value greater than 0.0 causes the layer to begin drawing
+    /// rounded corners on its background. By default, the corner radius does not apply to
+    /// the image in the layer’s contents property; it applies only to the background color and border of the layer.
+    /// However, setting the masksToBounds property to true causes the content to be clipped to the rounded corners.
+    ///
+    /// The default value of this property is 0.0.
     var cornerRadius: CGFloat { get set }
     
     /// Get and set the border width of the related UIView
