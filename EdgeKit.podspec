@@ -19,6 +19,7 @@ EdgeKit is a library to make Auto Layout easily on iOS. You can use it to make A
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nazmiyavuz' => 'nazmiyavuz@gmail.com' }
   s.source           = { :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :tag => s.version.to_s }
+  s.readme = "https://raw.githubusercontent.com/nazmiyavuz/EdgeKit/#{s.version.to_s}/README.md"
   s.ios.deployment_target = '12.0'
   s.source_files     = 'EdgeKit/Classes/**/*'
   s.swift_versions   = ['6.0']
