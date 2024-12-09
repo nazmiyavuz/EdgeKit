@@ -82,7 +82,7 @@ pod 'EdgeKit', :git => 'https://github.com/nazmiyavuz/EdgeKit.git', :branch => '
 #### For the exact version
 
 ```ruby
-pod 'EdgeKit', '~> 1.0.5'
+pod 'EdgeKit', '~> 1.0.0'
 ```
 
 ### Swift Package Manager
