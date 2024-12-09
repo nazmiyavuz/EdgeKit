@@ -2,10 +2,8 @@
 
 EdgeKit is a library to make Auto Layout easily on iOS.
 
-[![SwiftPM](https://img.shields.io/static/v1?message=SwiftPM&logo=swift&labelColor=orange&color=orange&logoColor=white&label=%20)](https://swift.org/)
-[![cocoapods](https://img.shields.io/badge/pods-1.0.0-181717?style=plastic&logo=cocoapods&color=lightgray)](https://cocoapods.org/pods/EdgeKit)
-[![apple](https://img.shields.io/badge/platform-iOS-181717?style=plastic&logo=apple&color=lightgray)](https://github.com/nazmiyavuz/EdgeKit/wiki)
-[![license](https://img.shields.io/badge/license-MIT-181717?style=plastic&logo=licence&color=lightgray)](https://github.com/nazmiyavuz/EdgeKit/blob/main/LICENSE)
+[![apple](https://img.shields.io/badge/platform-iOS-181717?style=plastic&logo=apple&color=lightgray)](https://developer.apple.com/)
+[![swift](https://img.shields.io/badge/swift-6.0-181717?style=plastic&logo=swift&color=orange)](https://developer.apple.com/swift/)
 
 ## [Wiki](https://github.com/nazmiyavuz/EdgeKit/wiki)
 
